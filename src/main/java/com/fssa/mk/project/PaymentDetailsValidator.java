@@ -44,7 +44,7 @@ public class PaymentDetailsValidator {
 		}
 		String cardNumberRegex = "^[0-9]{12,16}$";
 		Pattern pattern = Pattern.compile(cardNumberRegex);
-		Matcher matcher = pattern.matcher(cardNumberRegex);
+		Matcher matcher = pattern.matcher(cardNumber);
 		Boolean isMatch = matcher.matches();
 
 		if (!isMatch) {
@@ -102,7 +102,7 @@ public class PaymentDetailsValidator {
 
 		String cardNumberRegex = "^(0[1-9]|1[0-2])\\/?(([0-9]{4}|[0-9]{2})$)";
 		Pattern pattern = Pattern.compile(cardNumberRegex);
-		Matcher matcher = pattern.matcher(cardNumberRegex);
+		Matcher matcher = pattern.matcher(expiryDate);
 		Boolean isMatch = matcher.matches();
 		
 

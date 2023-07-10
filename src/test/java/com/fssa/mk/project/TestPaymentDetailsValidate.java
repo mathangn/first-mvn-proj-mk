@@ -105,7 +105,7 @@ public class TestPaymentDetailsValidate {
 	// Expiry Date Validate code
 	@Test
 	public void testValidateDueDate(){
-		Assertions.assertTrue(PaymentDetailsValidator.expiryDateValidator("09/23"));
+		Assertions.assertTrue(PaymentDetailsValidator.expiryDateValidator("01/2023"));
 	}
 	
 	
